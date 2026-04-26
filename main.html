@@ -1,16 +1,55 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
 
+        <!-- Setup -->
+        <div class="setup">
+            <input type="number" data-ns-test="game-number" id="game-number" placeholder="Enter number of turns" min="1">
+            <button data-ns-test="play-game" id="play-game">Play</button>
+        </div>
+
+        <!-- Scoreboard -->
+        <div class="scoreboard" id="scoreboard" style="display:none;">
+            <div class="score-item">
+                <span>Rounds Left</span>
+                <span data-ns-test="rounds-left" id="rounds-left">0</span>
+            </div>
+            <div class="score-item">
+                <span>User Points</span>
+                <span data-ns-test="user-points" id="user-points">0</span>
+            </div>
+            <div class="score-item">
+                <span>Computer Points</span>
+                <span data-ns-test="computer-points" id="computer-points">0</span>
+            </div>
+        </div>
+
+        <!-- Choices -->
+        <div class="choices" id="choices" style="display:none;">
+            <button data-ns-test="rock" class="choice-btn" id="rock">🪨 Rock</button>
+            <button data-ns-test="paper" class="choice-btn" id="paper">📄 Paper</button>
+            <button data-ns-test="scissors" class="choice-btn" id="scissors">✂️ Scissors</button>
+        </div>
+
+        <!-- Round Result -->
+        <div class="result-box" id="result-box" style="display:none;">
+            <p>Computer chose: <strong data-ns-test="computer-choose" id="computer-choose"></strong></p>
+            <p>Round Result: <strong data-ns-test="round-result" id="round-result"></strong></p>
+        </div>
+
+        <!-- Game Result -->
+        <div class="game-result-box" id="game-result-box" style="display:none;">
+            <h2>Game Over!</h2>
+            <p>Final Result: <strong data-ns-test="game-result" id="game-result"></strong></p>
+            <button id="restart">Play Again</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>

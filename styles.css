@@ -1,2 +1,169 @@
 
 /* Your CSS Code here. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 40px;
+    width: 480px;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 28px;
+    color: #e2b96f;
+    letter-spacing: 1px;
+}
+
+.setup {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    margin-bottom: 28px;
+}
+
+input[type="number"] {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: none;
+    font-size: 15px;
+    width: 200px;
+    outline: none;
+    background: #fff;
+    color: #333;
+}
+
+button {
+    padding: 10px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    transition: transform 0.1s, background 0.2s;
+}
+
+#play-game {
+    background: #e2b96f;
+    color: #1a1a2e;
+}
+
+#play-game:hover {
+    background: #d4a85a;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.score-item {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 14px;
+    color: #ccc;
+}
+
+.score-item span:last-child {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e2b96f;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.choice-btn {
+    background: rgba(255,255,255,0.1);
+    color: white;
+    border: 2px solid rgba(255,255,255,0.2);
+    border-radius: 12px;
+    padding: 16px 20px;
+    font-size: 16px;
+    width: 130px;
+}
+
+.choice-btn:hover {
+    background: rgba(226, 185, 111, 0.3);
+    border-color: #e2b96f;
+    transform: translateY(-3px);
+}
+
+.result-box {
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 16px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 2;
+}
+
+#computer-choose {
+    color: #7eb8f7;
+    font-size: 18px;
+}
+
+#round-result {
+    font-size: 20px;
+}
+
+#round-result.WON  { color: #4caf50; }
+#round-result.TIE  { color: #e2b96f; }
+#round-result.LOSE { color: #f44336; }
+
+.game-result-box {
+    background: rgba(255,255,255,0.08);
+    border-radius: 10px;
+    padding: 24px;
+}
+
+.game-result-box h2 {
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+#game-result {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#game-result.WON  { color: #4caf50; }
+#game-result.TIE  { color: #e2b96f; }
+#game-result.LOSE { color: #f44336; }
+
+#restart {
+    margin-top: 16px;
+    background: #e2b96f;
+    color: #1a1a2e;
+    padding: 10px 28px;
+}
+
+#restart:hover {
+    background: #d4a85a;
+}
